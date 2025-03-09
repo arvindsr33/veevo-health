@@ -1,36 +1,135 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Veevo Health Website
+
+A Next.js website for Veevo Health, a longevity company focused on heart health assessments to help people live longer.
+
+## Features
+
+- Statically generated website with Incremental Static Regeneration (ISR)
+- Bilingual support (English and Spanish)
+- Responsive design with Tailwind CSS
+- SEO optimized with meta tags, structured data, sitemap, and robots.txt
+- Performance optimized with image optimization and analytics
+- Waitlist signup form with payment integration
+- PWA support with manifest.json
+
+## Tech Stack
+
+- Next.js 15
+- Tailwind CSS
+- TypeScript
+- Stripe for payment processing
+
+## Project Structure
+
+```
+veevo-health/
+├── app/                  # Next.js app directory
+│   ├── api/              # API routes
+│   ├── es/               # Spanish pages
+│   ├── waitlist/         # Waitlist pages
+│   ├── layout.jsx        # Root layout
+│   ├── page.jsx          # Homepage
+│   ├── loading.jsx       # Loading state
+│   ├── not-found.jsx     # 404 page
+│   ├── sitemap.js        # Sitemap generator
+│   ├── robots.js         # Robots.txt generator
+│   └── manifest.js       # Web manifest generator
+├── components/           # Reusable components
+├── lib/                  # Utility functions
+├── public/               # Static assets
+├── next.config.js        # Next.js configuration
+├── tailwind.config.js    # Tailwind CSS configuration
+├── package.json          # Project dependencies
+└── README.md             # Project documentation
+```
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Node.js 18.17.0 or later
+- npm or yarn
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Clone the repository:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+   ```bash
+   git clone https://github.com/yourusername/veevo-health.git
+   cd veevo-health
+   ```
 
-## Learn More
+2. Install dependencies:
 
-To learn more about Next.js, take a look at the following resources:
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. Create a `.env.local` file in the root directory with the following variables:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+   ```
+   NEXT_PUBLIC_BASE_URL=https://veevo.health
+   NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=your_stripe_publishable_key
+   STRIPE_SECRET_KEY=your_stripe_secret_key
+   ```
 
-## Deploy on Vercel
+4. Run the development server:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+5. Open [http://localhost:3000](http://localhost:3000) in your browser to see the website.
+
+## Deployment
+
+The website can be deployed to Vercel, Netlify, or any other hosting platform that supports Next.js.
+
+### Deploying to Vercel
+
+1. Push your code to a GitHub repository.
+2. Import the repository to Vercel.
+3. Configure the environment variables.
+4. Deploy the website.
+
+## Internationalization
+
+The website supports English and Spanish languages. The language is automatically detected based on the user's browser settings, but can also be changed manually using the language switcher in the header.
+
+## SEO
+
+The website is optimized for search engines with:
+
+- Meta tags for each page
+- Structured data for rich snippets
+- Sitemap.xml for search engine crawling
+- Robots.txt for search engine indexing
+- Canonical URLs for each page
+
+## Performance
+
+The website is optimized for performance with:
+
+- Incremental Static Regeneration (ISR) for efficient rebuilds
+- Image optimization with Next.js Image component
+- Code splitting and lazy loading
+- Minification and compression
+
+## Analytics
+
+The website includes analytics tracking with Google Analytics. The analytics code is only loaded in production mode.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Contact
+
+For any questions or inquiries, please contact:
+
+- Email: arvind@veevo.health
+- LinkedIn: [Arvind Srivastav](https://linkedin.com/in/arvind-srivastav)
