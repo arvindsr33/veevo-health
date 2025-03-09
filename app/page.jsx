@@ -5,6 +5,9 @@ import {
   generateStructuredData,
   generateOrganizationData,
 } from "@/lib/seo";
+import { GiStarsStack } from "react-icons/gi";
+import { FaCrosshairs } from "react-icons/fa";
+import { HiAdjustments } from "react-icons/hi";
 
 export const metadata = generateMetaTags({
   title: "Veevo Health | Love Your Heart, Live Longer",
@@ -62,38 +65,38 @@ export default function Home() {
         {/* Benefits Section */}
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-12 text-[#c10f21]">
+            <h2 className="text-3xl font-bold text-center mb-12 text-[#a50c1c]">
               Why Choose Veevo Health?
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="bg-white p-8 rounded-lg shadow-md text-center">
-                <div className="bg-teal-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
-                  <span className="text-teal-600 text-2xl font-bold">P</span>
-                </div>
-                <h3 className="text-xl font-bold mb-3">Predictive</h3>
+                <GiStarsStack className="text-[#a50c1c] text-5xl mx-auto mb-4" />
+                <h3 className="text-xl font-bold mb-3 text-[#a50c1c]">
+                  Predictive
+                </h3>
                 <p className="text-gray-600">
                   Our AI-powered technology predicts potential heart issues
                   before they become serious problems.
                 </p>
               </div>
               <div className="bg-white p-8 rounded-lg shadow-md text-center">
-                <div className="bg-teal-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
-                  <span className="text-teal-600 text-2xl font-bold">P</span>
-                </div>
-                <h3 className="text-xl font-bold mb-3">Personalized</h3>
-                <p className="text-gray-600">
-                  Tailored assessments and recommendations based on your unique
-                  health profile and genetic factors.
-                </p>
-              </div>
-              <div className="bg-white p-8 rounded-lg shadow-md text-center">
-                <div className="bg-teal-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
-                  <span className="text-teal-600 text-2xl font-bold">P</span>
-                </div>
-                <h3 className="text-xl font-bold mb-3">Precise</h3>
+                <FaCrosshairs className="text-[#a50c1c] text-5xl mx-auto mb-4" />
+                <h3 className="text-xl font-bold mb-3 text-[#a50c1c]">
+                  Precise
+                </h3>
                 <p className="text-gray-600">
                   Cutting-edge technology delivers accurate insights for optimal
                   heart health and longevity.
+                </p>
+              </div>
+              <div className="bg-white p-8 rounded-lg shadow-md text-center">
+                <HiAdjustments className="text-[#a50c1c] text-5xl mx-auto mb-4" />
+                <h3 className="text-xl font-bold mb-3 text-[#a50c1c]">
+                  Personalized
+                </h3>
+                <p className="text-gray-600">
+                  Tailored assessments and recommendations based on your unique
+                  health profile and genetic factors.
                 </p>
               </div>
             </div>
