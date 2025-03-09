@@ -25,7 +25,7 @@ export default function Home() {
       />
       <div>
         {/* Hero Section */}
-        <section className="bg-gradient-to-r from-teal-500 to-blue-500 text-white py-20">
+        <section className="bg-gradient-to-r from-red-700 to-red-500 text-white py-20">
           <div className="container mx-auto px-4">
             <div className="flex flex-col md:flex-row items-center">
               <div className="md:w-1/2 mb-10 md:mb-0">
@@ -39,15 +39,15 @@ export default function Home() {
                 </p>
                 <Link
                   href="/waitlist"
-                  className="bg-white text-teal-600 px-8 py-3 rounded-full font-bold text-lg hover:bg-gray-100 transition duration-300"
+                  className="bg-white text-[#a50c1c] px-8 py-3 rounded-full font-bold text-lg hover:text-[#c82d3d] transition duration-300"
                 >
-                  Secure Your Spot – Join the Waitlist for $10!
+                  Secure Your Spot – Join the Waitlist!
                 </Link>
               </div>
               <div className="md:w-1/2 flex justify-center">
                 <div className="relative w-full max-w-md h-80">
                   <Image
-                    src="/images/healthy-living.webp"
+                    src="/images/healthy-living.png"
                     alt="Heart Health Visualization"
                     fill
                     style={{ objectFit: "cover" }}
@@ -62,7 +62,7 @@ export default function Home() {
         {/* Benefits Section */}
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-12">
+            <h2 className="text-3xl font-bold text-center mb-12 text-[#c10f21]">
               Why Choose Veevo Health?
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -152,9 +152,9 @@ export default function Home() {
             </p>
             <Link
               href="/waitlist"
-              className="bg-white text-teal-600 px-8 py-3 rounded-full font-bold text-lg hover:bg-gray-100 transition duration-300"
+              className="bg-white text-[#a50c1c] px-8 py-3 rounded-full font-bold text-lg hover:text-[#c82d3d] transition duration-300"
             >
-              Secure Your Spot – Join the Waitlist for $10!
+              Secure Your Spot – Join the Waitlist!
             </Link>
           </div>
         </section>

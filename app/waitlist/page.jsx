@@ -49,7 +49,7 @@ export default function Waitlist() {
           <div className="container mx-auto px-4">
             <div className="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-md">
               <h2 className="text-2xl font-bold mb-6 text-center">
-                Secure Your Spot – Join the Waitlist for $10!
+                Secure Your Spot – Join the Waitlist!
               </h2>
               <WaitlistForm lang="en" />
               <p className="mt-6 text-sm text-gray-600 text-center">

@@ -31,7 +31,7 @@ export default function RootLayout({
                       alt="Veevo Health Logo"
                       className="h-10 mr-3"
                     />
-                    <span className="text-2xl font-bold text-teal-600">
+                    <span className="text-2xl font-bold text-[#c10f21]">
                       Veevo Health
                     </span>
                   </div>
@@ -66,7 +66,7 @@ export default function RootLayout({
                   <li>
                     <Link
                       href="/waitlist"
-                      className="bg-teal-600 text-white px-4 py-2 rounded-full hover:bg-teal-700 transition duration-300"
+                      className="bg-[#c10f21] text-white px-4 py-2 rounded-full hover:bg-[#a50c1c] transition duration-300"
                     >
                       Join Waitlist
                     </Link>

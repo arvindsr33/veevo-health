@@ -128,7 +128,7 @@ export default function Services() {
             href="/waitlist"
             className="bg-teal-600 text-white px-8 py-3 rounded-full font-bold text-lg hover:bg-teal-700 transition duration-300"
           >
-            Secure Your Spot – Join the Waitlist for $10!
+            Secure Your Spot – Join the Waitlist!
           </Link>
         </div>
       </section>
