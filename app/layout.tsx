@@ -27,7 +27,7 @@ export default function RootLayout({
                 <Link href="/">
                   <div className="flex items-center">
                     <img
-                      src="/images/veevo-logo.svg"
+                      src="/images/icon.png"
                       alt="Veevo Health Logo"
                       className="h-10 mr-3"
                     />
@@ -41,10 +41,10 @@ export default function RootLayout({
                 <ul className="flex space-x-6 items-center">
                   <li>
                     <Link
-                      href="/"
+                      href="/#mission"
                       className="text-gray-700 hover:text-teal-600"
                     >
-                      Home
+                      Our Mission
                     </Link>
                   </li>
                   <li>
