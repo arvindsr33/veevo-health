@@ -47,7 +47,7 @@ export default function Home() {
               <div className="md:w-1/2 flex justify-center">
                 <div className="relative w-full max-w-md h-80">
                   <Image
-                    src="/images/heart-health.jpg"
+                    src="/images/healthy-living.webp"
                     alt="Heart Health Visualization"
                     fill
                     style={{ objectFit: "cover" }}
