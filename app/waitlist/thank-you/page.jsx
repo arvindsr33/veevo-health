@@ -4,7 +4,7 @@ import ThankYouDetails from "@/components/ThankYouDetails";
 import { generateMetaTags, generateStructuredData } from "@/lib/seo";
 import { isrConfig } from "@/lib/config";
 
-export const revalidate = isrConfig.revalidate;
+export const revalidate = 3600; // 1 hour in seconds
 
 export const metadata = generateMetaTags({
   title: "Thank You for Joining Our Waitlist | Veevo Health",

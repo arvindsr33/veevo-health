@@ -3,7 +3,7 @@ import WaitlistForm from "@/components/WaitlistForm";
 import { generateMetaTags, generateStructuredData } from "@/lib/seo";
 import { isrConfig } from "@/lib/config";
 
-export const revalidate = isrConfig.revalidate;
+export const revalidate = 3600; // 1 hour in seconds
 
 export const metadata = generateMetaTags({
   title: "Únete a Nuestra Lista de Espera | Veevo Health",
